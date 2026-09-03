@@ -26,6 +26,21 @@ public class Coordinates {
         else
             throw new BadValueException("Error: invalid longitude value.");
     }
-    public void setLatitude(int p_latitude) {latitude = p_latitude;}
-    public void setHeight(int p_height) {height = p_height;}
+    public void setLatitude(int p_latitude) {
+        if (p_latitude >= 0)
+            latitude = p_latitude;
+        else
+            throw new BadValueException("Error: invalid latitude value.");
+    }
+    public void setHeight(int p_height) {
+        if (p_height >= 0)
+        {
+            if (p_height > 100)
+                height = 100;
+            else
+                height = p_height;
+        }
+        else
+            throw new BadValueException("Error: invalid height value.");
+    }
 }

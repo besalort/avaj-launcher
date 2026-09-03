@@ -6,12 +6,18 @@ public class WeatherProvider {
     
     private String weather[] = {"RAIN", "FOG", "SUN", "SNOW"};
 
+
+
     public static WeatherProvider getInstance() {
         return instance;
     } // Singleton mais peut etre faut le retirer
 
         
     public String getCurrentWeather(Coordinates p_coordinates){
+        if (p_coordinates.getLatitude() > 50)
+        {
+            
+        }
         return "";
     }
 }
