@@ -1,10 +1,5 @@
 package avaj;
 
-import java.util.ArrayList;
-import java.util.List;
-
-// List<int> aicraft_ids = new List<int>();
-
 public class Aircraft extends Flyable {
     protected long id;
     protected String name;

@@ -7,6 +7,7 @@ public class Helicopter extends Aircraft {
 
     @Override
     public void updateConditions(){
+        System.out.println(weatherTower.getWeather(coordinates));
         //Recuperer les conditions meteorologiques et adapter les coords ?
     }
 }
