@@ -11,5 +11,10 @@ public class Aircraft extends Flyable {
         coordinates = p_coordinates;
     }
     @Override
+    public long getId(){return id;}
+    @Override
+    public String getName(){return name;}
+
+    @Override
     public void updateConditions() {}
 }
